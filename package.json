@@ -1,0 +1,23 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "Projet3 OpenClassrooms ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -u autoprefixer cssnano -o ./build/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yvan2A/ohmyfood-2.git"
+  },
+  "author": "Yvan REMOND",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yvan2A/ohmyfood-2/issues"
+  },
+  "homepage": "https://github.com/Yvan2A/ohmyfood-2#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
