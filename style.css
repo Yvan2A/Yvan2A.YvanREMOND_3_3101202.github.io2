@@ -51,7 +51,7 @@ header {
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .city i {
   font-size: 1.2rem;
@@ -65,8 +65,8 @@ header {
   margin: 2rem;
 }
 .reservation h2 {
-  margin: 1.5rem;
   font-size: 1.5rem;
+  margin: 1rem;
 }
 .reservation p {
   font-size: 1rem;

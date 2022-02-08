@@ -2,11 +2,11 @@
 @use "../utils/colors";
 
 .reservation {
-    text-align: center;
-    margin: 2rem;
+  text-align: center;
+  margin: 2rem;
   & h2 {
-    margin: 1.5rem;
     font-size: 1.5rem;
+    margin: 1rem;
   }
   & p {
     font-size: 1rem;
