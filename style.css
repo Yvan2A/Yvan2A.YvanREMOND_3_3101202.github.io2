@@ -60,6 +60,7 @@ header {
   font-size: 1rem;
 }
 
+/* Colors */
 .reservation {
   text-align: center;
   margin: 2rem;
@@ -90,39 +91,6 @@ header {
   opacity: 0.9;
 }
 
-.loader {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.9;
-  animation: disappear 200ms 3s forwards;
-  transform-origin: top;
-}
-.loader::after {
-  content: "";
-  height: 100px;
-  width: 100px;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #9356dc;
-  border-radius: 50%;
-  animation: spin 1s ease-in-out;
-  animation-iteration-count: 3;
-}
-
-@keyframes disappear {
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
 .tuto {
   counter-reset: steps;
   margin-bottom: 2rem;
@@ -512,6 +480,40 @@ body {
 #page-resto section.order button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 3s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #9356dc;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
