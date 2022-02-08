@@ -82,7 +82,7 @@ header {
   margin-top: 1rem;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
-  background-image: linear-btn(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   font-size: 1rem;
 }
 .reservation button:hover {
@@ -266,7 +266,7 @@ header {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
-  background-image: linear-btn(to top, #9356dc, #ff79da);
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 #homepage .menus .card__description:hover::after {
   opacity: 1;
@@ -288,7 +288,7 @@ footer h2 {
   padding: 1rem 0;
 }
 footer p {
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 
 @keyframes appear {
@@ -382,7 +382,7 @@ body {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
-  background-image: linear-btn(to top, #9356dc, #ff79da);
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 #page-resto .resto__title h2:hover::after {
   opacity: 1;
@@ -507,7 +507,7 @@ body {
   margin-top: 1rem;
   cursor: pointer;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
-  background-image: linear-btn(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 #page-resto section.order button:hover {
   transform: scale(1.02);
