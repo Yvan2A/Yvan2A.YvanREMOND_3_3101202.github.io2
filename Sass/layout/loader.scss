@@ -1,27 +1,49 @@
 @use "../utils/colors";
 
 .loader {
-    $animation-duration: 1s;
-    $animation-count: 3;
+
+    background-color: colors.$color-tertiary;
+    opacity: 0.9;
+    padding: 4em 3em;
     position: fixed;
-    display: grid;
-    place-items: center;
-    background-color: #ffffff;
-    height: 100vh;
     inset: 0;
     z-index: 1;
-    opacity: 0.9;
-    animation: disappear 200ms $animation-duration * $animation-count forwards;
+    border-radius: 20px;
     transform-origin: top;
-    &::after {
-      content: "";
-      height: 100px;
-      width: 100px;
-      border-right: 5px solid transparent;
-      border-top: 5px solid colors.$purple;
-      border-radius: 50%;
-      animation: spin $animation-duration ease-in-out;
-      animation-iteration-count: $animation-count;
+    animation: disappear 200ms forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 2s;
+    }
+  svg {
+    height: 150px;
+    width: 150px;
+  }
+  svg circle {
+    fill: none;
+    stroke: colors.$purple;
+    stroke-width: 10px;
+    transform: translate(5px, 5px);
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: circle 2s forwards ease-in-out;
+  }
+  .loader-title {
+    font-weight: bolder;
+    font-size: 5em;
+    color: colors.$purple;
+    animation: appear 1s forwards;
+  }
+  span {
+    color: colors.$darkgrey;
+    animation: appear 2s forwards;
+  }
+
+  @keyframes circle {
+    to {
+      stroke-dashoffset: 0;
     }
   }
   
@@ -30,10 +52,10 @@
       transform: scale(0);
     }
   }
-  
   @keyframes spin {
     to {
       transform: rotate(360deg);
     }
   }
+  
   

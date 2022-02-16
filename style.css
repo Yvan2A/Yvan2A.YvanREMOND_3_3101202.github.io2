@@ -483,28 +483,54 @@ body {
 }
 
 .loader {
+  background-color: #99e2d0;
+  opacity: 0.9;
+  padding: 4em 3em;
   position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  height: 100vh;
   inset: 0;
   z-index: 1;
-  opacity: 0.9;
-  animation: disappear 200ms 3s forwards;
+  border-radius: 20px;
   transform-origin: top;
-}
-.loader::after {
-  content: "";
-  height: 100px;
-  width: 100px;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #9356dc;
-  border-radius: 50%;
-  animation: spin 1s ease-in-out;
-  animation-iteration-count: 3;
+  animation: disappear 200ms forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-delay: 2s;
 }
 
+svg {
+  height: 150px;
+  width: 150px;
+}
+
+svg circle {
+  fill: none;
+  stroke: #9356dc;
+  stroke-width: 10px;
+  transform: translate(5px, 5px);
+  stroke-linecap: round;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: circle 2s forwards ease-in-out;
+}
+
+.loader-title {
+  font-weight: bolder;
+  font-size: 5em;
+  color: #9356dc;
+  animation: appear 1s forwards;
+}
+
+span {
+  color: #353535;
+  animation: appear 2s forwards;
+}
+
+@keyframes circle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 @keyframes disappear {
   to {
     transform: scale(0);
