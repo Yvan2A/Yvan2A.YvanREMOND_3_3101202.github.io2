@@ -1,10 +1,8 @@
 @use "../utils/mixins";
 @use "../utils/variables";
-@use "../utils/colors";
-@use "../utils/animations";
 
 body {
-  background-color: colors.$lightergrey;
+  background-color: variables.$lightergrey;
 }
 
 #page-resto {
@@ -38,7 +36,7 @@ body {
       padding: 2rem 1rem;
       @include mixins.heart-animated;
       border-radius: 2rem 2rem 0 0;
-      background-color: colors.$lightergrey;
+      background-color: variables.$lightergrey;
     }
   }
 
@@ -64,7 +62,7 @@ body {
         left: 0;
         height: 0.25rem;
         width: 3rem;
-        background-color: colors.$color-tertiary;
+        background-color: variables.$color-tertiary;
       }
     }
     .menus__category {
@@ -109,7 +107,7 @@ body {
           flex-shrink: 0;
           $button-width: 4rem;
           border-radius: 0 1rem 1rem 0;
-          background-color: colors.$color-tertiary;
+          background-color: variables.$color-tertiary;
           margin-right: -1 * $button-width;
           width: $button-width;
           transition: margin-right 0.5s;
@@ -121,7 +119,7 @@ body {
             height: $size;
             width: $size;
             border-radius: 1rem;
-            color: colors.$color-tertiary;
+            color: variables.$color-tertiary;
           }
         }
         &:hover {

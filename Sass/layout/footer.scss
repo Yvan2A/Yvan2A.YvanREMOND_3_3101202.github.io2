@@ -1,7 +1,7 @@
-@use "./../utils/colors";
+@use "./../utils/variables";
 
 footer {
-  background-color: colors.$darkgrey;
+  background-color: variables.$darkgrey;
   padding: 1rem 2rem;
   color: white;
   h2 {

@@ -1,6 +1,5 @@
 @use "../utils/mixins";
 @use "../utils/variables";
-@use "../utils/colors";
 
 .tuto {
   counter-reset: steps;
@@ -20,7 +19,7 @@
       content: counter(steps);
       counter-increment: steps;
       color: white;
-      background-color: colors.$purple;
+      background-color: variables.$purple;
       width: 2 * variables.$tuto-bullet-height;
       height: 2 * variables.$tuto-bullet-height;
       display: grid;
@@ -39,14 +38,14 @@
     @include mixins.box-shadow;
     &:hover {
       @include mixins.transform-zoom;
-      background-color: lighten(colors.$purple, 35%);
+      background-color: lighten(variables.$purple, 35%);
       i::before {
-        color: colors.$purple;
+        color: variables.$purple;
       }
     }
     & i.fas {
       margin-right: 1rem;
-      color: colors.$lightgrey;
+      color: variables.$lightgrey;
       font-size: 1.2rem;
     }
   }

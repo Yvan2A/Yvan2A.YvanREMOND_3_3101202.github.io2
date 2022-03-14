@@ -1,5 +1,4 @@
 @use "../utils/variables";
-@use "../utils/colors";
 @use "../utils/mixins";
 
 #homepage {
@@ -22,8 +21,8 @@
         position: absolute;
         height: 2rem;
         width: 5rem;
-        background-color: colors.$color-tertiary;
-        color: darken(colors.$color-tertiary, 50%);
+        background-color: variables.$color-tertiary;
+        color: darken(variables.$color-tertiary, 50%);
         display: grid;
         place-items: center;
         right: 1rem;

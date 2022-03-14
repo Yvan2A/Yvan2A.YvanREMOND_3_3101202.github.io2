@@ -1,7 +1,7 @@
-@use "../utils/colors";
+@use "../utils/variables";
 
 .loader {
-    background-color: colors.$color-tertiary;
+    background-color: variables.$color-tertiary;
     opacity: 0.9;
     padding: 4em 3em;
     position: fixed;
@@ -21,7 +21,7 @@
   }
   svg circle {
     fill: none;
-    stroke: colors.$purple;
+    stroke: variables.$purple;
     stroke-width: 10px;
     transform: translate(5px, 5px);
     stroke-linecap: round;
@@ -36,7 +36,7 @@
     animation: appear 1s forwards;
   }
   span {
-    color: colors.$darkgrey;
+    color: variables.$darkgrey;
     animation: appear 2s forwards;
   }
 
