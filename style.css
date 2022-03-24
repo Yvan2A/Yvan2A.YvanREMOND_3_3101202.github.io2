@@ -446,6 +446,7 @@ body {
   width: 1rem;
   border-radius: 1rem;
   color: #99e2d0;
+  padding: 5px;
 }
 #page-resto .menus .menus__category .menu-item:hover {
   cursor: pointer;

@@ -4,7 +4,6 @@
 body {
   background-color: variables.$lightergrey;
 }
-
 #page-resto {
   header {
     &:hover::before {
@@ -67,7 +66,6 @@ body {
     }
     .menus__category {
       overflow: hidden;
-
       .menu-item {
         $numberOfItems: 3;
         @for $i from 1 through $numberOfItems {
@@ -120,6 +118,7 @@ body {
             width: $size;
             border-radius: 1rem;
             color: variables.$color-tertiary;
+            padding: 5px;
           }
         }
         &:hover {
